@@ -1,0 +1,63 @@
+.circleWrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+/* Créer une classe pour l'image circulaire */
+.circleImg {
+    display: flex;
+    border-radius: 50%; /* Cela rend l'image circulaire */
+    overflow: hidden; /* Cela masque toutes les parties de l'image qui débordent de la bordure */
+    border: 2px solid #ffd700;
+    transform: scale(0.7);
+    align-items: center;
+}
+
+.circleImg:hover {
+    transform: scale(0.9);
+    border-color: #ffa500;
+}
+
+.caption{
+    display: flex;
+    color: #ffa500;
+    font-size: 3rem;
+    justify-content: center; /* This centers the element horizontally within its parent container */
+    align-items: center;
+}
+
+.bioTitle {
+    display: flex;
+    margin-left:5rem;
+    margin-right: 5rem;
+    color: #C0C0C0;
+    font-size: 10rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.1rem;
+}
+
+.bioTitle:hover {
+    color: #ffa500;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    transform: scale(-1.0);
+}
+
+.bioWrapper{
+    display: flex;
+    color: #CD7F32;
+    border-color: #CD7F32;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 3rem;
+    flex-direction: column;
+    justify-content: center; /* This centers the element horizontally within its parent container */
+    align-items: center;
+    text-align: center;
+}
