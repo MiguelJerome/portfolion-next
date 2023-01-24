@@ -1,0 +1,29 @@
+.circleWrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Créer une classe pour l'image circulaire */
+.circleImg {
+    width: 700px;
+    height: 800px;
+    display: flex;
+    border-radius: 50%; /* Cela rend l'image circulaire */
+    overflow: hidden; /* Cela masque toutes les parties de l'image qui débordent de la bordure */
+    border: 2px solid #ffd700;
+    transform: scale(0.7);
+    align-items: center;
+}
+
+.circleImg:hover {
+    transform: scale(0.9);
+    border-color: #ffa500;
+}
+
+.caption{
+    display: flex;
+    color: #ffa500;
+    font-size: 3rem;
+    justify-content: center;
+}

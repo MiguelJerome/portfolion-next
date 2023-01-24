@@ -6,3 +6,18 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%), url('/MiguelJerome.png');
+  background-size: cover;
+  animation: foggy 15s linear infinite;
+}
+
+@keyframes foggy {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: -200px -200px;
+  }
+}

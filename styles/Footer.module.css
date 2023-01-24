@@ -4,10 +4,11 @@
     align-items: center;
 }
 
-.footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer a {   
     margin: 0 10px;
 }
 
+.img {
+    width: 100px;
+    height: 100px;
+  }
