@@ -4,7 +4,9 @@ export default function NotFoundPage() {
 
 return (
         <>      
-           <h1>This page is not found</h1>
+           <div className={styles.notFoundWrapper}>
+           <p> 404 | This page could not be found.</p>
+            </div>
         </>
 );
 }

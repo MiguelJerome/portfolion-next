@@ -1,0 +1,12 @@
+.notFoundWrapper{
+    display: flex;
+    color: #CD7F32;
+    border-color: #CD7F32;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 3rem;
+    flex-direction: column;
+    justify-content: center; /* This centers the element horizontally within its parent container */
+    align-items: center;
+    text-align: center;
+}
