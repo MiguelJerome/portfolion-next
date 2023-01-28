@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import linkedIn from '../public/resume.svg';
+import indeed from '../public/resume.svg';
 import styles from '../styles/CV.module.css';
 
 export default function CV() {
@@ -22,7 +22,7 @@ return (
                     <li className={styles.liCV}>Bootstrap</li>
                 </ul>
                 <a href="https://my.indeed.com/p/miguelj-ci3ud34" target="_blank" rel="noopener noreferrer">
-                <Image src={linkedIn} alt="LinkedIn" className={styles.img} />
+                <Image src={indeed} alt="indeed" className={styles.img} />
             </a>
             </div>
 
@@ -54,7 +54,7 @@ return (
                     <li className={styles.liCV}>Docker</li>
                 </ul>
                 <a href="https://my.indeed.com/p/miguelj-ci3ud34" target="_blank" rel="noopener noreferrer">
-                <Image src={linkedIn} alt="LinkedIn" className={styles.img} />
+                <Image src={indeed} alt="indeed" className={styles.img} />
             </a>
             </div>
 
@@ -67,7 +67,7 @@ return (
                     <li className={styles.liCV}>Xcode, Swift</li>  
                 </ul>
                 <a href="https://my.indeed.com/p/miguelj-ci3ud34" target="_blank" rel="noopener noreferrer">
-                <Image src={linkedIn} alt="LinkedIn" className={styles.img} />
+                <Image src={indeed} alt="indeed" className={styles.img} />
             </a>
             </div>
             
