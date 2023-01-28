@@ -1,5 +1,5 @@
 
-import Circle from "../components/Circle";
+import Circle from "./Circle";
 import styles from '../styles/Apropos.module.css';
 
 export default function Apropos() {

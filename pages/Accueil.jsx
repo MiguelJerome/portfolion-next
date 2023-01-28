@@ -1,12 +1,11 @@
 
-import Circle from "../components/Circle";
+import Accueil from "../components/Accueil";
 
-export default function Apropos() {
+export default function Home() {
 
-return  
-<>
-    <main>
-    <Circle />
-    </main>
+return  <>
+  
+    <Accueil />
+   
 </>
 }

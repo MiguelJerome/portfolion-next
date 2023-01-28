@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Bio from "../components/Bio";
 import Circle from "../components/Circle";
-import Acceuil from "../components/Acceuil"
+import Acceuil from "../components/Accueil"
 import Apropos from "../components/Apropos"
 import Projet1 from "../components/Projet1"
 import Projet2 from "../components/Projet2"
@@ -17,13 +17,14 @@ export default function Home() {
   <button onClick={() => setPage('Projet1')}>Projet1</button>
   <button onClick={() => setPage('Projet2')}>Projet2</button>
   <button onClick={() => setPage('CV')}>CV</button>
+  <button onClick={() => setPage('NotFound')}>NotFound</button>
   {page === 'Acceuil' &&  <Acceuil />} 
   {page === 'Apropos' &&  <Apropos />} 
   {page === 'Projet1' &&  <Projet1 />} 
   {page === 'Projet2' &&  <Projet2 />}
   {page === 'CV' &&  <CV />}
+  {page === 'NotFound' &&  ""}
   {(page !== "Acceuil" && page !== "Apropos" && page !== "Projet1" && page !== "Projet2" && page !== "CV") 
-    && <PageNotFound />}
-   
+    && <PageNotFound />}  
   </>
 }
