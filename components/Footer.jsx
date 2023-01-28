@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import github from '../public/github-9-xxl.png';
-import linkedIn from '../public/linkedIn.png';
+import linkedIn from '../public/linkedin.svg';
 import stackOverflow from '../public/stackOverflow.png';
 import styles from '../styles/Footer.module.css';
 
