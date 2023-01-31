@@ -5,11 +5,10 @@ import NotFoundPage from "../components/NotFoundPage";
 
 export default function Menu(props) {
   const [page, setPage] = useState('Accueil');
-  return (
+  return (<>
     <nav className={styles.navMenu}>
         <ul className={styles.ulMenu}>
-            <Link href="/" />  
-            <Link href="*" />
+          
             <Link href="/Accueil" >
                 <button className={`${styles.buttonMenu} ${styles.title}`} onClick={() => setPage('Accueil')}><h1>Miguel Jerome</h1></button>
             </Link>
@@ -24,8 +23,13 @@ export default function Menu(props) {
             </Link>
             <Link href="/CV" >
               <button className={styles.buttonMenu} onClick={() => setPage('CV')}>CV</button> 
-            </Link>   
+            </Link>  
+           
         </ul>
+        
     </nav>
+     
+       </>
+       
   );
 }

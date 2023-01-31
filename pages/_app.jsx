@@ -3,10 +3,10 @@ import Layout from '../components/Layout';
 import 'normalize.css/normalize.css'
 import '../styles/globals.css'
 
-import { Roboto_Flex, Montserrat } from '@next/font/google'
+import {Roboto_Flex, Montserrat} from '@next/font/google'
 
-const roboto = Roboto_Flex();
-const montserrat = Montserrat();
+const roboto = Roboto_Flex({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }) {
   return <>
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
         }
       `}
     </style>
-     
+
     <Layout>
       <Component {...pageProps} />
     </Layout>
