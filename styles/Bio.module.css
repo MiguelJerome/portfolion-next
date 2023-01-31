@@ -29,3 +29,17 @@
     align-items: center;
     text-align: center;
 }
+
+@media (max-width: 767px) {
+    .bioTitle {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 7rem;
+    }
+  
+    .bioWrapper {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 2rem;
+    }
+  }

@@ -28,3 +28,18 @@
     justify-content: center;
 }
 
+@media (max-width: 767px) {
+    .circleWrapper {
+      flex-direction: column; 
+    }
+    
+    .circleImg {
+      width: 400px;
+      height: 500px;
+      transform: scale(0.5);
+    }
+  
+    .caption {
+      font-size: 2rem;
+    }
+  }

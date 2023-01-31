@@ -10,3 +10,10 @@
     align-items: center;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .notFoundWrapper{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
