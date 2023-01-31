@@ -1,11 +1,11 @@
 
 import Accueil from "../components/Accueil";
 
-export default function Home() {
+export default function Acceuil() {
 
-return  <>
-  
-    <Accueil />
-   
-</>
+return(  
+    <>
+        <Accueil />   
+    </>
+);
 }

@@ -8,8 +8,7 @@
 
   .projectTitle {
     display: flex;
-    margin-left:5rem;
-    margin-right: 5rem;
+    margin: 0 5rem;
     color: #ffa500;
     font-size: 5rem;
     flex-direction: row;
@@ -25,12 +24,9 @@
     align-items: center;
     margin: 1rem 0;
     color: #ffa500;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin: 0 20rem;
     font-size: 2rem;
-    flex-direction: column;
     justify-content: center; /* This centers the element horizontally within its parent container */
-    align-items: center;
     text-align: center;
     margin-bottom: 15rem;
 }

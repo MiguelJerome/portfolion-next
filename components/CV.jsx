@@ -5,8 +5,8 @@ import styles from '../styles/CV.module.css';
 export default function CV() {
 
 return (
-        <>      
-           <section>
+    <>      
+        <section>
             <div className={styles.cvTitle }>
                 <p>Compétences Front-End</p>
             </div>      
@@ -23,7 +23,7 @@ return (
                 </ul>
                 <a href="https://my.indeed.com/p/miguelj-ci3ud34" target="_blank" rel="noopener noreferrer">
                 <Image src={indeed} alt="indeed" className={styles.img} />
-            </a>
+                </a>
             </div>
 
             <div className={styles.cvTitle }>
@@ -55,7 +55,7 @@ return (
                 </ul>
                 <a href="https://my.indeed.com/p/miguelj-ci3ud34" target="_blank" rel="noopener noreferrer">
                 <Image src={indeed} alt="indeed" className={styles.img} />
-            </a>
+                </a>
             </div>
 
             <div className={styles.cvTitle }>
@@ -68,10 +68,9 @@ return (
                 </ul>
                 <a href="https://my.indeed.com/p/miguelj-ci3ud34" target="_blank" rel="noopener noreferrer">
                 <Image src={indeed} alt="indeed" className={styles.img} />
-            </a>
+                </a>
             </div>
-            
         </section> 
-        </>
+    </>
 );
 }

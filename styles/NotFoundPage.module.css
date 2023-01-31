@@ -2,8 +2,7 @@
     display: flex;
     color: #CD7F32;
     border-color: #CD7F32;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin: 0 20rem;
     font-size: 3rem;
     flex-direction: column;
     justify-content: center; /* This centers the element horizontally within its parent container */
@@ -13,7 +12,6 @@
 
 @media (max-width: 768px) {
     .notFoundWrapper{
-      margin-left: 10px;
-      margin-right: 10px;
+        margin: 0 20rem;
     }
   }

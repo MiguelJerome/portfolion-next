@@ -1,7 +1,7 @@
-import CV from "../components/CV"
+import CV from "../components/CV";
 
 export default function Home() {
-  return <>
-            <CV />
-        </>
+  return (
+    <CV />
+  );
 }

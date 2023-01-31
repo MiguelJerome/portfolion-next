@@ -6,14 +6,14 @@
 
 /* Créer une classe pour l'image circulaire */
 .circleImg {
+    display: flex;
+    align-items: center;
     width: 700px;
     height: 800px;
-    display: flex;
     border-radius: 50%; /* Cela rend l'image circulaire */
     overflow: hidden; /* Cela masque toutes les parties de l'image qui débordent de la bordure */
     border: 2px solid #ffd700;
     transform: scale(0.7);
-    align-items: center;
 }
 
 .circleImg:hover {
@@ -23,9 +23,9 @@
 
 .caption{
     display: flex;
+    justify-content: center;
     color: #ffa500;
     font-size: 3rem;
-    justify-content: center;
 }
 
 @media (max-width: 767px) {
