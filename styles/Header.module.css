@@ -1,8 +1,13 @@
 .header {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     background-color: #ffd700;
+}
+
+.header a {   
+    margin: 0 10px;
 }
 
 .titre {
@@ -12,7 +17,10 @@
 
 @media(min-width: 40rem) {
     .header {
+        margin: auto;
         flex-direction: row;
         align-items: center;
+        
     }
 }
+

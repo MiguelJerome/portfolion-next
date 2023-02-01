@@ -30,12 +30,12 @@
 
 @media (max-width: 767px) {
     .bioTitle {
-      margin: 0 2rem;
+      margin-left: 21rem;
       font-size: 7rem;
     }
   
     .bioWrapper {
-      margin: 0 1rem;
+      margin-left: 21rem;
       font-size: 2rem;
     }
   }

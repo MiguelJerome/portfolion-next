@@ -1,3 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; 
+}
+
+.imgWrapper{
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
 .img {
     display: flex;
     justify-content: center;
@@ -5,7 +23,7 @@
     height: 100%;
     object-fit: cover;
   }
-
+ 
   .projectTitle {
     display: flex;
     margin: 0 5rem;
@@ -41,9 +59,32 @@
     line-height: 1.5;
 }
 
+
 @media (max-width: 767px) {
   .img {
       height: auto;
       width: 100%;
+      margin-left: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 40rem;
+    margin-left: 7.5rem;
+  }
+
+  .projectWrapper p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ffa500;
+      font-size: 2rem;
+      justify-content: center; /* This centers the element horizontally within its parent container */
+      text-align: center;
+      margin-bottom: 10rem;
   }
 }

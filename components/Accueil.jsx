@@ -1,6 +1,6 @@
 import Circle from "./Circle";
 
-export default function Apropos() {
+export default function Accueil() {
 
 return  (
         <main>
