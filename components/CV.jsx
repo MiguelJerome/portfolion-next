@@ -3,7 +3,6 @@ import indeed from '../public/resume.svg';
 import styles from '../styles/CV.module.css';
 
 export default function CV() {
-
 return (
     <>      
         <section>

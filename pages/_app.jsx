@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Layout from '../components/Layout';
 
 import 'normalize.css/normalize.css'
@@ -9,6 +10,7 @@ const roboto = Roboto_Flex({ subsets: ['latin'] });
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }) {
+  const [page, setPage] = useState('Accueil');
   return( 
     <>
       <style jsx global>
@@ -22,8 +24,8 @@ export default function App({ Component, pageProps }) {
         `}
       </style>
 
-      <Layout>
-        <Component {...pageProps} />
+      <Layout setPage={setPage}>
+        <Component page={page} {...pageProps} />
       </Layout>
     </>
   );
