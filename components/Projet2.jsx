@@ -9,7 +9,7 @@ import styles from '../styles/Projet2.module.css';
 export default function Projet2() {
 return(
         <>      
-            <section className={styles.container}>
+            <main className={styles.container}>
                 <div className={styles.projectWrapper}>
                     <div className={styles.projectTitle }>
                         <p>Tournoi de jeu vidéo</p>
@@ -71,7 +71,7 @@ return(
                         </a>
                        <p> Une "page d'administration" permet à un administrateur de gérer et de créer un tournoi de jeux vidéo. Cette page comprend des formulaires pour créer les détails du tournoi tels que le nom, la description, la date de début et la capacité et l’option de réinitialiser le formulaire de créer un tournoi. Il peut également avoir des options pour gérer les tournois, les supprimer et afficher les données des tournois. Le but d'une page d'administration est de permettre à un administrateur de créer et de gérer un tournoi de jeux vidéo, garantissant ainsi un événement fluide et bien organisé pour les participants.</p>
                 </div>
-            </section>   
+            </main>   
         </>
     );
 }

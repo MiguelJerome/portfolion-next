@@ -9,7 +9,7 @@ import styles from '../styles/Projet1.module.css';
 export default function Projet1() {
 return(
         <>      
-            <section className={styles.container}>
+            <main className={styles.container}>
                 <div className={styles.projectWrapper}>
                     <div className={styles.projectTitle}>
                         <p>Google Books API Search Engine</p>
@@ -76,7 +76,7 @@ return(
                             Lorsque l'utilisateur clique sur l'option pour afficher ses livres enregistrés, une liste de tous les livres qu'il a enregistrés sur son compte lui sera présentée. Chaque livre comprendra le titre, l'auteur, la description, l'image et un lien vers le livre sur le site Web de Google Livres. Chaque livre comprendra également un bouton intitulé "Supprimer ce livre", lorsque vous cliquez dessus, supprimera ce livre de la liste des livres enregistrés de l'utilisateur.
                         </p>
                 </div>
-            </section>   
+            </main>   
         </>
     );
 }

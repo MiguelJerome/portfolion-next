@@ -5,7 +5,7 @@ import styles from '../styles/CV.module.css';
 export default function CV() {
 return (
     <>      
-        <section>
+        <main>
             <div className={styles.cvTitle }>
                 <p>Compétences Front-End</p>
             </div>      
@@ -69,7 +69,7 @@ return (
                 <Image src={indeed} alt="indeed" className={styles.img} />
                 </a>
             </div>
-        </section> 
+        </main> 
     </>
 );
 }
