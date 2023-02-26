@@ -4,14 +4,15 @@
     justify-content: center;
     flex-direction: row;
     background-color: #ffd700;
+    margin:auto;
 }
 
 .header a {   
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 .titre {
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 1rem;
 }
 
@@ -19,8 +20,7 @@
     .header {
         margin: auto;
         flex-direction: row;
-        align-items: center;
-        
+        align-items: center; 
+        justify-content: center;
     }
 }
-

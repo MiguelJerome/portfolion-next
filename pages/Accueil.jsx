@@ -1,7 +1,6 @@
-
 import Accueil from "../components/Accueil";
 
-export default function Acceuil() {
+export default function AccueilPage() {
 
 return(  
     <>

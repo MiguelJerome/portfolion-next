@@ -1,57 +1,59 @@
 .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-  .img a {   
-    margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
-  .cvTitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 5rem;
-    color: #ffa500;
-    font-size: 5rem;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-    letter-spacing: 0.1rem;
+.img a {   
+  margin: 0 10px;
 }
-  .cvWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* This centers the element horizontally within its parent container */
-    text-align: center;
-    color: #ffa500;
-    font-size: 2rem;
-    margin: 1rem 20rem 5rem 20rem;
+
+.cvTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 2rem;
+  color: #ffa500;
+  font-size: 5rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1rem;
+}
+
+.cvWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffa500;
+  font-size: 2rem;
+  margin: 1rem 5rem 5rem 5rem;
 }
 
 .cvWrapper h4 {
-    margin-bottom: 0.5rem;
-    text-align: center;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .cvWrapper p {
-    text-align: center;
-    line-height: 1.5;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .ulCV {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .liCV {
-    margin-bottom: 10px;
-    font-size: 3rem;
+  margin-bottom: 10px;
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -62,12 +64,12 @@
 
   .cvTitle {
     font-size: 3rem;
-    margin-left: 21rem;
+    margin-left: 10px;
   }
 
   .cvWrapper {
     font-size: 1.5rem;
-    margin-left: 31rem;
+    margin: 1rem 2rem 5rem 2rem;
   }
 
   .liCV {

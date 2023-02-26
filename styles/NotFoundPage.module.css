@@ -5,7 +5,7 @@
     margin: 0 20rem;
     font-size: 3rem;
     flex-direction: column;
-    justify-content: center; /* This centers the element horizontally within its parent container */
+    justify-content: center; 
     align-items: center;
     text-align: center;
 }

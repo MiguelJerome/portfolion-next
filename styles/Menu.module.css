@@ -16,7 +16,6 @@
     align-content: flex-start;
 }
   
-
 .titre {
     margin: 1rem;
     padding: 1rem;
@@ -32,10 +31,10 @@
     transition: background-color 0.2s ease-in-out;
   }
 
-  .buttonMenu:hover {
-    background-color: #ffd700;
-    color: #ffffff;
-    cursor: pointer; 
+.buttonMenu:hover {
+  background-color: #ffd700;
+  color: #ffffff;
+  cursor: pointer; 
 }
 
 @media (max-width: 767px) {
@@ -56,5 +55,8 @@
       justify-content: center;
       margin: 0;
       padding: 0;
+    }
+    .monNom{
+      font-size: 1rem;
     }
   }
