@@ -12,6 +12,9 @@
 
 @media (max-width: 768px) {
     .notFoundWrapper{
+        display: flex;
         margin: 0 20rem;
+        margin-left: auto;
+        margin-right: auto;
     }
   }

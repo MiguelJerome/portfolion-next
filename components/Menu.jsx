@@ -1,35 +1,42 @@
 import styles from '../styles/Menu.module.css';
-import MenuBoutonSousTitre from '/components/Menu/MenuBoutonSousTitre';
+import Link from 'next/link';
 
 export default function Menu() {
   return (
     <>
       <nav className={styles.navMenu}>
-          <ul className={styles.ulMenu}>
-            <MenuBoutonSousTitre href="/" className={`${styles.buttonMenu}  `}>
-              <button className={`${styles.buttonMenu} ${styles.title} ${styles.monNom}`}><h1>Miguel Jerome</h1></button>
-            </MenuBoutonSousTitre>
-
-            <MenuBoutonSousTitre href="/Apropos">
-              <button className={styles.buttonMenu}>À propos</button>
-            </MenuBoutonSousTitre>
-
-            <MenuBoutonSousTitre href="/Projet1">
-              <button className={styles.buttonMenu}>Projet1</button>
-            </MenuBoutonSousTitre>
-
-            <MenuBoutonSousTitre href="/Projet2">
-              <button className={styles.buttonMenu}>Projet2</button>
-            </MenuBoutonSousTitre>
-
-            <MenuBoutonSousTitre href="/CV">
-              <button className={styles.buttonMenu}>CV</button> 
-            </MenuBoutonSousTitre> 
-          
-            <MenuBoutonSousTitre href="/Contact">
-              <button className={styles.buttonMenu}>Contact</button> 
-            </MenuBoutonSousTitre> 
-          </ul> 
+        <ul className={`${styles.li} ${styles.ulMenu} `}>
+          <li className={styles.li}>
+            <Link href="/" className={`${styles.buttonMenu} ${styles.title} ${styles.monNom}`}>
+              <h1>Miguel Jerome</h1>
+            </Link>
+          </li>
+          <li className={styles.li}>
+            <Link href="/Apropos" className={`${styles.buttonMenu}`}>
+              À propos
+            </Link>
+          </li>
+          <li className={styles.li}>
+            <Link href="/Projet1" className={styles.buttonMenu}>
+              Projet1
+            </Link>
+          </li>
+          <li className={styles.li}>
+            <Link href="/Projet2" className={styles.buttonMenu}>
+              Projet2
+            </Link>
+          </li>
+          <li className={styles.li}>
+            <Link href="/CV" className={styles.buttonMenu}>
+              CV
+            </Link>
+          </li>
+          <li className={styles.li}>
+            <Link href="/Contact" className={styles.buttonMenu}>
+              Contact
+            </Link>
+          </li>
+        </ul>
       </nav>
     </>
   );

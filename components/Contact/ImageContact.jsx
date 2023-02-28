@@ -1,23 +1,10 @@
-import Image from 'next/image';
+import React, { useState } from 'react';
 import styles from '/styles/Contact.module.css';
-import miguelPicture from '/public/MiguelJerome.png';
+import Circle from '/components/Circle'
 
 export default function ImageContact() {
+  const [classNameImage, setClassImage] = useState(styles.circleImg);
   return (
-    <>
-      <main>
-        <div className={styles.circleWrapper}>
-          <figure>
-            <figcaption className={styles.caption}>Miguel Jerome</figcaption>
-            <Image
-              src={miguelPicture}
-              alt="Miguel Picture"
-              className={styles.circleImg}
-            />
-            <figcaption className={styles.caption}>Développeur Full Stack</figcaption>
-          </figure>
-        </div>
-      </main>
-    </>
+    <Circle className={classNameImage} />
   );
 }
