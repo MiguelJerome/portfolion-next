@@ -1,5 +1,5 @@
-import styles from '../styles/Menu.module.css';
-import Link from 'next/link';
+import styles from "../styles/Menu.module.css";
+import Link from "next/link";
 
 export default function Menu() {
   return (
@@ -7,7 +7,10 @@ export default function Menu() {
       <nav className={styles.navMenu}>
         <ul className={`${styles.li} ${styles.ulMenu} `}>
           <li className={styles.li}>
-            <Link href="/" className={`${styles.buttonMenu} ${styles.title} ${styles.monNom}`}>
+            <Link
+              href="/"
+              className={`${styles.buttonMenu} ${styles.title} ${styles.monNom}`}
+            >
               <h1>Miguel Jerome</h1>
             </Link>
           </li>

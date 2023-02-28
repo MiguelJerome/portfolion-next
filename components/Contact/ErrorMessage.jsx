@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from '/styles/Contact.module.css';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "/styles/Contact.module.css";
 
 function ErrorMessage({ message }) {
   if (!message) {
@@ -15,7 +15,7 @@ function ErrorMessage({ message }) {
 }
 
 ErrorMessage.propTypes = {
-  message: PropTypes.string
+  message: PropTypes.string,
 };
 
 export default ErrorMessage;

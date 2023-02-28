@@ -1,14 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useContactForm } from './useContactForm';
-import Nom from './Nom';
-import Email from './Email';
-import Message from './Message';
-import ErrorMessage from './ErrorMessage';
-import BoutonEnvoyer from './BoutonEnvoyer';
+import React from "react";
+import PropTypes from "prop-types";
+import { useContactForm } from "./useContactForm";
+import Nom from "./Nom";
+import Email from "./Email";
+import Message from "./Message";
+import ErrorMessage from "./ErrorMessage";
+import BoutonEnvoyer from "./BoutonEnvoyer";
 
 function ContactForm() {
-  const { formData, errorMessage, handleChange, handleSubmit } = useContactForm();
+  const { formData, errorMessage, handleChange, handleSubmit } =
+    useContactForm();
   const { name, email, message } = formData;
 
   return (

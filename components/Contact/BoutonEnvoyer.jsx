@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '/styles/Contact.module.css';
+import React from "react";
+import styles from "/styles/Contact.module.css";
 
 function BoutonEnvoyer() {
   return (

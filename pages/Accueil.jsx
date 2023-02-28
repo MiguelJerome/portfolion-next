@@ -1,10 +1,9 @@
-import Accueil from "../components/Accueil";
+import Circle from "../components/Circle";
 
 export default function AccueilPage() {
-
-return(  
+  return (
     <>
-        <Accueil />   
+      <Circle />
     </>
-);
+  );
 }

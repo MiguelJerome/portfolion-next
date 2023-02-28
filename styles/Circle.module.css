@@ -1,45 +1,45 @@
 .circleWrapper {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Créer une classe pour l'image circulaire */
 .circleImg {
-    display: flex;
-    align-items: center;
-    width: 700px;
-    height: 800px;
-    border-radius: 50%; /* Cela rend l'image circulaire */
-    overflow: hidden; /* Cela masque toutes les parties de l'image qui débordent de la bordure */
-    border: 2px solid #ffd700;
-    transform: scale(0.7);
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 800px;
+  border-radius: 50%; /* Cela rend l'image circulaire */
+  overflow: hidden; /* Cela masque toutes les parties de l'image qui débordent de la bordure */
+  border: 2px solid #ffd700;
+  transform: scale(0.7);
 }
 
 .circleImg:hover {
-    transform: scale(0.9);
-    border-color: #ffa500;
+  transform: scale(0.9);
+  border-color: #ffa500;
 }
 
-.caption{
-    display: flex;
-    justify-content: center;
-    color: #ffa500;
-    font-size: 3rem;
+.caption {
+  display: flex;
+  justify-content: center;
+  color: #ffa500;
+  font-size: 3rem;
 }
 
 @media (max-width: 767px) {
-    .circleWrapper {
-      flex-direction: column; 
-    }
-    
-    .circleImg {
-      width: 400px;
-      height: 500px;
-      transform: scale(0.5);
-    }
-  
-    .caption {
-      font-size: 2rem;
-    }
+  .circleWrapper {
+    flex-direction: column;
   }
+
+  .circleImg {
+    width: 400px;
+    height: 500px;
+    transform: scale(0.5);
+  }
+
+  .caption {
+    font-size: 2rem;
+  }
+}

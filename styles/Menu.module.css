@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#ffd700;
+  background-color: #ffd700;
 }
-  
+
 .ulMenu {
   list-style-type: none;
   display: flex;
@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
 }
-  
+
 .titre {
   margin: 1rem;
   padding: 1rem;
@@ -26,8 +26,8 @@
   font-weight: bold;
   font-size: 1.7rem;
   background-color: #ffd700;
-  border: none; 
-  padding: 1rem 2rem; 
+  border: none;
+  padding: 1rem 2rem;
   transition: background-color 0.2s ease-in-out;
   text-decoration: none; /* remove underline */
   color: black; /* set text color */
@@ -36,10 +36,10 @@
 .buttonMenu:hover {
   background-color: #ffd700;
   color: white; /* change text color on hover */
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.li{
+.li {
   display: flex;
   margin: 5rem 0s;
 }
@@ -63,7 +63,7 @@
     margin: 0;
     padding: 0;
   }
-  .monNom{
+  .monNom {
     font-size: 1rem;
   }
 }

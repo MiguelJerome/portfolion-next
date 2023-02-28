@@ -1,20 +1,20 @@
-.notFoundWrapper{
-    display: flex;
-    color: #CD7F32;
-    border-color: #CD7F32;
-    margin: 0 20rem;
-    font-size: 3rem;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
+.notFoundWrapper {
+  display: flex;
+  color: #cd7f32;
+  border-color: #cd7f32;
+  margin: 0 20rem;
+  font-size: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-    .notFoundWrapper{
-        display: flex;
-        margin: 0 20rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .notFoundWrapper {
+    display: flex;
+    margin: 0 20rem;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
