@@ -7,27 +7,35 @@ import Message from "./Message";
 import ErrorMessage from "./ErrorMessage";
 import BoutonEnvoyer from "./BoutonEnvoyer";
 
-function ContactForm() {
-  const { formData, errorMessage, handleChange, handleSubmit } =
-    useContactForm();
-  const { name, email, message } = formData;
+function ContactForm(props) {
+	const {
+		formData = {},
+		errorMessage,
+		handleChange,
+		handleSubmit,
+	} = useContactForm();
+	const { name, email, message } = formData;
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <Nom name={name} handleChange={handleChange} />
-      <Email email={email} handleChange={handleChange} />
-      <Message message={message} handleChange={handleChange} />
-      <ErrorMessage message={errorMessage} />
-      <BoutonEnvoyer />
-    </form>
-  );
+	return (
+		<form onSubmit={handleSubmit}>
+			<Nom name={name} handleChange={handleChange} />
+			<Email email={email} handleChange={handleChange} />
+			<Message message={message} handleChange={handleChange} />
+			<ErrorMessage message={errorMessage} />
+			<BoutonEnvoyer />
+		</form>
+	);
 }
 
 ContactForm.propTypes = {
-  formData: PropTypes.object.isRequired,
-  errorMessage: PropTypes.string,
-  handleChange: PropTypes.func.isRequired,
-  handleSubmit: PropTypes.func.isRequired,
+	formData: PropTypes.object,
+	errorMessage: PropTypes.string,
+	handleChange: PropTypes.func.isRequired,
+	handleSubmit: PropTypes.func.isRequired,
+};
+
+ContactForm.defaultProps = {
+	formData: {},
 };
 
 export default ContactForm;
