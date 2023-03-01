@@ -1,69 +1,69 @@
 .navMenu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffd700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffd700;
 }
 
 .ulMenu {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
 
 .titre {
-  margin: 1rem;
-  padding: 1rem;
+	margin: 1rem;
+	padding: 1rem;
 }
 
 .buttonMenu {
-  margin-right: 4rem;
-  font-weight: bold;
-  font-size: 1.7rem;
-  background-color: #ffd700;
-  border: none;
-  padding: 1rem 2rem;
-  transition: background-color 0.2s ease-in-out;
-  text-decoration: none; /* remove underline */
-  color: black; /* set text color */
+	margin-right: 4rem;
+	font-weight: bold;
+	font-size: 1.7rem;
+	background-color: #ffd700;
+	border: none;
+	padding: 1rem 2rem;
+	transition: background-color 0.2s ease-in-out;
+	text-decoration: none;
+	color: black;
 }
 
 .buttonMenu:hover {
-  background-color: #ffd700;
-  color: white; /* change text color on hover */
-  cursor: pointer;
+	background-color: #ffd700;
+	color: white;
+	cursor: pointer;
 }
 
 .li {
-  display: flex;
-  margin: 5rem 0s;
+	display: flex;
+	margin: 5rem 0s;
 }
 
 @media (max-width: 767px) {
-  .navMenu {
-    display: flex;
-    width: 5rem;
-    flex-direction: column;
-    align-items: center;
-  }
-  .buttonMenu {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-  .ulMenu {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  .monNom {
-    font-size: 1rem;
-  }
+	.navMenu {
+		display: flex;
+		width: 5rem;
+		flex-direction: column;
+		align-items: center;
+	}
+	.buttonMenu {
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+	.ulMenu {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+	.monNom {
+		font-size: 1rem;
+	}
 }

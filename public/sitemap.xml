@@ -1,0 +1,22 @@
+<xml version="1.0" encoding="UTF-8">
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url>
+            <loc>http://localhost:3000</loc>
+        </url>
+        <url>
+            <loc>http://localhost:3000/Apropos</loc>
+        </url>
+        <url>
+            <loc>http://localhost:3000/Contact</loc>
+        </url>
+        <url>
+            <loc>http://localhost:3000/CV</loc>
+        </url>
+        <url>
+            <loc>http://localhost:3000/Projet1</loc>
+        </url>
+        <url>
+            <loc>http://localhost:3000/Projet2</loc>
+        </url>
+    </urlset>
+</xml>

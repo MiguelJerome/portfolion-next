@@ -16,8 +16,7 @@ export default function Footer() {
 					src={github}
 					alt="GitHub"
 					className={styles.img}
-					loading="lazy"
-					priority
+					priority={true}
 				/>
 			</a>
 			<a
@@ -29,8 +28,7 @@ export default function Footer() {
 					src={linkedIn}
 					alt="LinkedIn"
 					className={styles.img}
-					loading="lazy"
-					priority
+					priority={true}
 				/>
 			</a>
 			<a
@@ -42,8 +40,7 @@ export default function Footer() {
 					src={stackOverflow}
 					alt="StackOverflow"
 					className={styles.img}
-					loading="lazy"
-					priority
+					priority={true}
 				/>
 			</a>
 		</footer>

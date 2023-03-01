@@ -1,8 +1,26 @@
+import Head from "next/head";
 import styles from "../styles/Bio.module.css";
 
 export default function Apropos() {
 	return (
 		<>
+			<Head>
+				<title>Miguel Jerome - A propos</title>
+				<meta
+					name="description"
+					content="Développeur web full stack bilingue, passionné et diplômé d'Ottawa."
+				/>
+
+				<meta property="og:title" content="Miguel Jerome - A propos" />
+				<meta
+					property="og:description"
+					content="Développeur web full stack bilingue, passionné et diplômé d'Ottawa."
+				/>
+				<meta
+					property="og:image"
+					content="http://localhost:3000/MiguelJerome.png"
+				/>
+			</Head>
 			<main>
 				<div className={styles.bioTitle}>
 					<p>BIO </p>

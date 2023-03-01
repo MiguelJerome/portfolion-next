@@ -14,9 +14,7 @@ export default function Circle() {
 								src={miguelPicture}
 								alt="Miguel Picture"
 								className={styles.circleImg}
-								layout="responsive"
-								loading="lazy"
-								priority
+								priority={true}
 							/>
 						</div>
 						<figcaption className={styles.caption}>

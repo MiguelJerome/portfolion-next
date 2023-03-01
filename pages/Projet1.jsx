@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import GoogleSearchMain from "../public/BookSearchGogleMain.png";
 import BookSearchConnexion from "../public/BookSearchConnexion.png";
@@ -9,6 +10,23 @@ import styles from "../styles/Projet1.module.css";
 export default function Projet1() {
 	return (
 		<>
+			<Head>
+				<title>BookSearch - Google</title>
+				<meta
+					name="description"
+					content="Application MERN pour rechercher et enregistrer des livres avec l'API Google Books."
+				/>
+
+				<meta property="og:title" content="BookSearch - Google" />
+				<meta
+					property="og:description"
+					content="Application MERN pour rechercher et enregistrer des livres avec l'API Google Books."
+				/>
+				<meta
+					property="og:image"
+					content="http://localhost:3000/BookSearchGogleMain.png"
+				/>
+			</Head>
 			<main className={styles.container}>
 				<div className={styles.projectWrapper}>
 					<div className={styles.projectTitle}>
@@ -24,9 +42,7 @@ export default function Projet1() {
 								src={GoogleSearchMain}
 								alt="GoogleSearchMain"
 								className={styles.img}
-								layout="responsive"
-								loading="lazy"
-								priority
+								priority={true}
 							/>
 						</a>
 					</div>
@@ -56,9 +72,7 @@ export default function Projet1() {
 								src={BookSearchConnexion}
 								alt="BookSearchConnexion"
 								className={styles.img}
-								layout="responsive"
-								loading="lazy"
-								priority
+								priority={true}
 							/>
 						</a>
 					</div>
@@ -84,9 +98,7 @@ export default function Projet1() {
 								src={BookSearchInscription}
 								alt="BookSearchInscription"
 								className={styles.img}
-								layout="responsive"
-								loading="lazy"
-								priority
+								priority={true}
 							/>
 						</a>
 					</div>
@@ -114,9 +126,7 @@ export default function Projet1() {
 								src={BookSearchPageRecherche}
 								alt="BookSearchPageRecherche"
 								className={styles.img}
-								layout="responsive"
-								loading="lazy"
-								priority
+								priority={true}
 							/>
 						</a>
 					</div>
@@ -149,9 +159,7 @@ export default function Projet1() {
 								src={BookSearchLivresEnregistres}
 								alt="BookSearchLivresEnregistres"
 								className={styles.img}
-								layout="responsive"
-								loading="lazy"
-								priority
+								priority={true}
 							/>
 						</a>
 					</div>

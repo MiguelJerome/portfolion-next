@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import JeuVideoMain from "../public/JeuVideoMain.png";
 import JeuVideoConnexion from "../public/JeuVideoConnexion.png";
@@ -9,6 +10,23 @@ import styles from "../styles/Projet2.module.css";
 export default function Projet2() {
 	return (
 		<>
+			<Head>
+				<title>Jeu Video - Tournoi</title>
+				<meta
+					name="description"
+					content="Projet tournoi de jeux vidéo avec système de connexion pour les joueurs et les administrateurs. Inclut pages de connexion, inscription, recherche et inscription à des tournois, et page d'administration pour créer et gérer des tournois."
+				/>
+
+				<meta property="og:title" content="Jeu Video - Tournoi" />
+				<meta
+					property="og:description"
+					content="Projet tournoi de jeux vidéo avec système de connexion pour les joueurs et les administrateurs. Inclut pages de connexion, inscription, recherche et inscription à des tournois, et page d'administration pour créer et gérer des tournois."
+				/>
+				<meta
+					property="og:image"
+					content="http://localhost:3000/JeuVideoPageAcceuil.png"
+				/>
+			</Head>
 			<main className={styles.container}>
 				<div className={styles.projectWrapper}>
 					<div className={styles.projectTitle}>
@@ -23,9 +41,7 @@ export default function Projet2() {
 							src={JeuVideoMain}
 							alt="JeuVideoMain"
 							className={styles.img}
-							layout="responsive"
-							loading="lazy"
-							priority
+							priority={true}
 						/>
 					</a>
 					<p>
@@ -82,9 +98,7 @@ export default function Projet2() {
 							src={JeuVideoConnexion}
 							alt="JeuVideoConnexion"
 							className={styles.img}
-							layout="responsive"
-							loading="lazy"
-							priority
+							priority={true}
 						/>
 					</a>
 					<p>
@@ -109,9 +123,7 @@ export default function Projet2() {
 							src={JeuVideoInscription}
 							alt="JeuVideoInscription"
 							className={styles.img}
-							layout="responsive"
-							loading="lazy"
-							priority
+							priority={true}
 						/>
 					</a>
 					<p>
@@ -140,9 +152,7 @@ export default function Projet2() {
 							src={JeuVideoPageAcceuil}
 							alt="JeuVideoPageAcceuil"
 							className={styles.img}
-							layout="responsive"
-							loading="lazy"
-							priority
+							priority={true}
 						/>
 					</a>
 					<p>
@@ -169,9 +179,7 @@ export default function Projet2() {
 							src={JeuVideoPageAdmin}
 							alt="JeuVideoPageAdmin"
 							className={styles.img}
-							layout="responsive"
-							loading="lazy"
-							priority
+							priority={true}
 						/>
 					</a>
 					<p>
