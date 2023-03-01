@@ -8,14 +8,15 @@ export default function CV() {
 		<>
 			<Head>
 				<title>Miguel Jerome - CV</title>
-				<meta name="description" content="Miguel Jerome - CV" />
+				<meta
+					name="description"
+					content="La page CV contient l'expérience professionnelle, les compétences, la formation, les certifications, les références professionnelles et les réalisations."
+				/>
 
 				<meta property="og:title" content="Miguel Jerome - CV" />
 				<meta
 					property="og:description"
-					content="Développement Front-End : HTML, CSS, JavaScript, JQuery, Responsive design, React, React Next.js, Bootstrap.
-Développement Back-End : API, Node.js, Insomnia, Postman, MSQL, Sequelize, Microsoft SQL Server, SQL Lite Studio, Express, Heroku, Handlebar, MongoDB, Mongoose, NOSQL, C++, C#, Java, PWA, Github, WPF, GraphQL, Rust, Python, Docker.
-Développement Mobile : Android Studio, Xcode, Swift."
+					content="La page CV contient l'expérience professionnelle, les compétences, la formation, les certifications, les références professionnelles et les réalisations."
 				/>
 				<meta
 					property="og:image"
