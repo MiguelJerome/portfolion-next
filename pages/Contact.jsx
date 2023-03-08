@@ -3,15 +3,12 @@ import styles from "/styles/Contact.module.css";
 import Head from "next/head";
 import ContactForm from "/components/Contact/ContactForm";
 import ImageContact from "/components/Contact/ImageContact";
+import { useContactForm } from "/components/Contact/useContactForm";
 
 export default function ContactPage() {
-	const handleChange = (event) => {
-		event.preventDefault();
-	};
+	const { formData, errorMessage, handleChange, handleSubmit } =
+		useContactForm();
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
-	};
 	return (
 		<>
 			<Head>
@@ -48,6 +45,8 @@ export default function ContactPage() {
 				<div className={styles.contactWrapper}>
 					<h1 className={styles.title}>Contactez-moi</h1>
 					<ContactForm
+						formData={formData}
+						errorMessage={errorMessage}
 						handleChange={handleChange}
 						handleSubmit={handleSubmit}
 					/>

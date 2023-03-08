@@ -6,8 +6,10 @@ import Email from "./Email";
 import Message from "./Message";
 import ErrorMessage from "./ErrorMessage";
 import BoutonEnvoyer from "./BoutonEnvoyer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function ContactForm(props) {
+function ContactForm() {
 	const {
 		formData = {},
 		errorMessage,
@@ -17,25 +19,38 @@ function ContactForm(props) {
 	const { name, email, message } = formData;
 
 	return (
-		<form onSubmit={handleSubmit}>
-			<Nom name={name} handleChange={handleChange} />
-			<Email email={email} handleChange={handleChange} />
-			<Message message={message} handleChange={handleChange} />
-			<ErrorMessage message={errorMessage} />
-			<BoutonEnvoyer />
-		</form>
+		<main>
+			<ToastContainer />
+			<form noValidate onSubmit={(event) => handleSubmit(event, formData)}>
+				<Nom name={name} handleChange={handleChange} />
+				<ErrorMessage message={errorMessage.name || undefined} name="Nom" />
+				<Email email={email} handleChange={handleChange} />
+				<ErrorMessage message={errorMessage.email || undefined} name="Email" />
+				<Message message={message} handleChange={handleChange} />
+				<ErrorMessage
+					message={errorMessage.message || undefined}
+					name="Message"
+				/>
+				<BoutonEnvoyer handleFormSubmit={handleSubmit} />
+				<ErrorMessage
+					message={errorMessage.submit || undefined}
+					name="submit"
+				/>
+			</form>
+		</main>
 	);
 }
 
 ContactForm.propTypes = {
 	formData: PropTypes.object,
-	errorMessage: PropTypes.string,
+	errorMessage: PropTypes.object,
 	handleChange: PropTypes.func.isRequired,
 	handleSubmit: PropTypes.func.isRequired,
 };
 
 ContactForm.defaultProps = {
 	formData: {},
+	errorMessage: {},
 };
 
 export default ContactForm;

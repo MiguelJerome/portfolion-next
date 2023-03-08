@@ -3,19 +3,23 @@ import PropTypes from "prop-types";
 import styles from "/styles/Contact.module.css";
 
 function ErrorMessage({ message }) {
-  if (!message) {
-    return null;
-  }
+	if (message === undefined || message === null) {
+		return null;
+	}
 
-  return (
-    <div>
-      <p className={styles.errorText}>{message}</p>
-    </div>
-  );
+	return (
+		<div className={styles.errorText}>
+			<p>{message}</p>
+		</div>
+	);
 }
 
 ErrorMessage.propTypes = {
-  message: PropTypes.string,
+	message: PropTypes.string,
+};
+
+ErrorMessage.defaultProps = {
+	message: "",
 };
 
 export default ErrorMessage;
