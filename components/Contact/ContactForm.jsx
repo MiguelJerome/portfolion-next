@@ -6,8 +6,6 @@ import Email from "./Email";
 import Message from "./Message";
 import ErrorMessage from "./ErrorMessage";
 import BoutonEnvoyer from "./BoutonEnvoyer";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 function ContactForm() {
 	const {
@@ -20,7 +18,6 @@ function ContactForm() {
 
 	return (
 		<main>
-			<ToastContainer />
 			<form noValidate onSubmit={(event) => handleSubmit(event, formData)}>
 				<Nom name={name} handleChange={handleChange} />
 				<ErrorMessage message={errorMessage.name || undefined} name="Nom" />
@@ -32,10 +29,6 @@ function ContactForm() {
 					name="Message"
 				/>
 				<BoutonEnvoyer handleFormSubmit={handleSubmit} />
-				<ErrorMessage
-					message={errorMessage.submit || undefined}
-					name="submit"
-				/>
 			</form>
 		</main>
 	);

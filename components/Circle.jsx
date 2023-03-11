@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Circle.module.css";
-import miguelPicture from "../public/MiguelJerome.png";
+import miguelPicture from "../public/MiguelJeromeNew.png";
 
 export default function Circle() {
 	return (

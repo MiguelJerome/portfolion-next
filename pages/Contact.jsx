@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "/styles/Contact.module.css";
 import Head from "next/head";
+import Circle from "/components/Circle";
 import ContactForm from "/components/Contact/ContactForm";
-import ImageContact from "/components/Contact/ImageContact";
 import { useContactForm } from "/components/Contact/useContactForm";
 
 export default function ContactPage() {
@@ -30,7 +30,7 @@ export default function ContactPage() {
 			</Head>
 			<main>
 				<div className={styles.contactWrapper}>
-					<ImageContact />
+					<Circle />
 					<p className={styles.contactTitle}>Entrer en contact</p>
 					<div className={styles.contactWrapper}>
 						<p className={styles.p}>
