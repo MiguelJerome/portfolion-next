@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export const useContactForm = () => {
+	// Définir l'état initial du formulaire et des messages d'erreur
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -12,7 +13,7 @@ export const useContactForm = () => {
 		email: "",
 		message: "",
 	});
-
+	// Fonctions de validation des champs du formulaire
 	const validateEmail = (email) => {
 		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		return regex.test(String(email).toLowerCase());
@@ -28,25 +29,66 @@ export const useContactForm = () => {
 		return regex.test(message);
 	};
 
+	// Fonction appelée lors de la soumission du formulaire
 	const handleSubmit = async (event, data) => {
 		event.preventDefault();
 
 		const { name, email, message } = formData;
 
+		// Valider chaque champ du formulaire et afficher les messages d'erreur appropriés
 		let validEmail = validateEmail(email);
 		let validName = validateName(name);
 		let validMessage = validateMessage(message);
 
+		if (!name) {
+			setErrorMessage((prevErrorMessage) => ({
+				...prevErrorMessage,
+				name: "Le champ nom est requis.",
+			}));
+		} else if (!validName) {
+			setErrorMessage((prevErrorMessage) => ({
+				...prevErrorMessage,
+				name: "Votre nom doit contenir au moins 2 caractères",
+			}));
+		}
+
+		if (!email) {
+			setErrorMessage((prevErrorMessage) => ({
+				...prevErrorMessage,
+				email: "Le champ email est requis.",
+			}));
+		} else if (!validEmail) {
+			setErrorMessage((prevErrorMessage) => ({
+				...prevErrorMessage,
+				email: "Votre email est invalide",
+			}));
+		}
+
+		if (!message) {
+			setErrorMessage((prevErrorMessage) => ({
+				...prevErrorMessage,
+				message: "Le champ message est requis.",
+			}));
+		} else if (!validMessage) {
+			setErrorMessage((prevErrorMessage) => ({
+				...prevErrorMessage,
+				message: "Le champ message doit contenir au moins 2 caractères.",
+			}));
+		}
+
+		// Si le formulaire n'est pas valide, ne pas l'envoyer
 		if (!validEmail || !validName || !validMessage) {
 			return;
 		}
 
+		// Si le formulaire est valide, envoyer les données au backend
 		const response = await fetch("/api/login", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(data),
 		});
 
+		// Si la requête est réussie, réinitialiser le formulaire et les messages d'erreur
 		if (response.ok) {
 			setFormData({ name: "", email: "", message: "" });
 			setErrorMessage({ name: "", email: "", message: "" });
@@ -58,11 +100,13 @@ export const useContactForm = () => {
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 
+		// Mettre à jour l'état du formulaire en fonction du champ modifié
 		setFormData((prevFormData) => ({
 			...prevFormData,
 			[name]: value,
 		}));
 
+		// Valider le champ modifié et afficher le message d'erreur approprié
 		if (name === "email") {
 			const isValid = validateEmail(value);
 
@@ -108,6 +152,7 @@ export const useContactForm = () => {
 		}
 	};
 
+	// Retourner un objet contenant les données du formulaire, les messages d'erreur, et les fonctions pour gérer les événements du formulaire
 	return {
 		formData,
 		errorMessage,
