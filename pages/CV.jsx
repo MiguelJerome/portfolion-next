@@ -39,7 +39,7 @@ export default function CV() {
 						<li className={styles.liCV}>Bootstrap</li>
 					</ul>
 					<a
-						href="https://my.indeed.com/p/miguelj-ci3ud34"
+						href="https://profile.indeed.com/p/miguelj-wstrbqg"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -80,7 +80,7 @@ export default function CV() {
 						<li className={styles.liCV}>Docker</li>
 					</ul>
 					<a
-						href="https://my.indeed.com/p/miguelj-ci3ud34"
+						href="https://profile.indeed.com/p/miguelj-wstrbqg"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -102,7 +102,7 @@ export default function CV() {
 						<li className={styles.liCV}>Xcode, Swift</li>
 					</ul>
 					<a
-						href="https://my.indeed.com/p/miguelj-ci3ud34"
+						href="https://profile.indeed.com/p/miguelj-wstrbqg"
 						target="_blank"
 						rel="noopener noreferrer"
 					>

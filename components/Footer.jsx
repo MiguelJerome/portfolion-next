@@ -20,7 +20,7 @@ export default function Footer() {
 				/>
 			</a>
 			<a
-				href="https://www.linkedin.com/in/miguel-jerome-7a023396/"
+				href="https://linkedin.com/in/miguel-jérôme-22780a276"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
