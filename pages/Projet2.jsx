@@ -33,7 +33,7 @@ export default function Projet2() {
 						<p>Tournoi de jeu vidéo</p>
 					</div>
 					<a
-						href="https://github.com/MiguelJerome/Jeu-video-tournoi"
+						href="https://jeuvideotournoi.onrender.com/connexion"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -90,7 +90,7 @@ export default function Projet2() {
 						<p>Page de connexion</p>
 					</div>
 					<a
-						href="https://github.com/MiguelJerome/Jeu-video-tournoi"
+						href="https://jeuvideotournoi.onrender.com/connexion"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -115,7 +115,7 @@ export default function Projet2() {
 						<p>Page d&rsquo;inscription</p>
 					</div>
 					<a
-						href="https://github.com/MiguelJerome/Jeu-video-tournoi"
+						href="https://jeuvideotournoi.onrender.com/connexion"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -144,7 +144,7 @@ export default function Projet2() {
 						<p>Page d&rsquo;accueil</p>
 					</div>
 					<a
-						href="https://github.com/MiguelJerome/Jeu-video-tournoi"
+						href="https://jeuvideotournoi.onrender.com/connexion"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -171,7 +171,7 @@ export default function Projet2() {
 						<p>Page d’administration pour créer un tournoi de jeu vidéo</p>
 					</div>
 					<a
-						href="https://github.com/MiguelJerome/Jeu-video-tournoi"
+						href="https://jeuvideotournoi.onrender.com/connexion"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
